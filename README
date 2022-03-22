@@ -1,0 +1,40 @@
+README.txt
+Robot Navigation Challenge
+Samuel Indurkar
+
+Steps:
+1. Run program on Linux Machine on CLI after unzipping. 
+3. Compile the code with following command: "make RobotChallenge"
+4. Execute: 
+        Either with no arguments as "RobotChallenge" 
+            if no arguments are specified for infile and outfile my prog will use the test
+            files given with project description and write my output to SAM_output.txt
+
+        or execute as "RobotChallenge yourInFile.txt"
+            if only infile specified then SAM_output.txt used as outfile
+
+        or execute as "RobotChallenge yourInFile.txt yourOutFile.txt" or
+            where both files can be specified by user
+5. Output: 
+    Output file contains output in desired format as specified in project description. 
+    Output to stdout contains extra path information. 
+
+
+All code/files are my own work from this challenge or previous projects
+
+Files:
+    List.h - header file for the List ADT which is a Queue with doubly linked list data
+    structure.
+    List.c - has all the functions which were declared in '.h'
+    Graph.h - header file for the Graph ADT which contains declarations for its
+        corresponding functions. 
+    Graph.c - contains the functions declared in 'Graph.h' such as getOrder, getParent etc,
+        and has the constructors for the GraphOBJ
+    RobotChallenge.c - this file implements the functions from Graph.c to calculate 
+        shortest Navigation Path. 
+    Makefile - creates an executible from the code
+        make RobotChallenge - creates executible 'RobotChallenge' to calculate path
+        make clean - rm *.o and such...
+
+
+
